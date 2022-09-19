@@ -103,37 +103,49 @@ body
     .headings--dark {color:#1b2527;}
     .headings--light {color:#e3d7c4;}
 
-.aboutme
-{
-    margin-left: 50rem;
-    font-size: 1.6rem;
-    width: calc((100% - 8rem) / 2);
-}
-
-    .aboutme_myphoto
-    {
-        float: left;
-        margin-right: 10%;
-        width: 20%;
-        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
-        border-radius: .2rem;
-        transition: all .2s;
-        outline-offset: 2rem;
-    }
-    .aboutme_header 
-    {
-        font-weight: 0;
-    }
-    .aboutme_text
-    {
-        justify-content: center;
-        font-size: 1.6rem; 
-    }
 
 .section-aboutme
 {
     height: 70vh;
+    
 }
+        .aboutme
+    {
+        margin-left: 50rem;
+        font-size: 1.6rem;
+        width: 80rem;
+    }
+    @media only screen and (max-width: 68.25em) 
+    {
+        .aboutme 
+        {
+            /* max-width: 50rem; */
+            max-width: 69rem;
+            padding: 0 3rem; 
+        } 
+    }
+
+        .aboutme_myphoto
+        {
+            float: left;
+            margin-right: 10%;
+            width: 20%;
+            box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+            border-radius: .2rem;
+            transition: all .2s;
+            outline-offset: 2rem;
+        }
+        .aboutme_header 
+        {
+            font-weight: 0;
+        }
+        .aboutme_text
+        {
+            justify-content: center;
+            font-size: 1.6rem; 
+        }
+
+
     
     
 
