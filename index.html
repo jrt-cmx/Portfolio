@@ -2,24 +2,72 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
+    <!--fontawesomeicons-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    
     <link rel="stylesheet" href="./css/style.css">
 		<title>Junior Tantono</title>
   </head>
-    <body ontouchstart id="home">
-        <header class="header">
-            <div class="header__text-box">
-              <h1 class="heading-primary">
-                <span class="heading-primary--main">Junior Tantono</span>
-                <span class="heading-primary--sub txt-type" data-wait="3000"
-                  data-words='[Testing 123", "Download my resume below!"]'>
-                  Download my resume below!</span>
-              </h1>
-              <a href="/documents/JuniorTantono_CV.pdf" target="_blank" class="btn btn--white btn--animated">
-                <i class="fas fa-cloud"></i> Resume
-              </a>
-            </div>
-          </header>
+  <body ontouchstart id="home">
+    
+    <header class="header">
+      <div class="header_container">
+        <h1 class="header_container_items">
+          <span class="header_container--name">Junior Tantono</span>
+          <span class="header_container--cvprompt"> Download my resume below!</span>
+        </h1>
+        <a href="/documents/JuniorTantono_CV.pdf" target="_blank" class="button button--white">
+        <i class="fas fa-cloud"></i> Resume
+        </a>
+      </div>
+    </header>
 
+  <main>
+    <!-- About Me Section-->
+    <section class="section-aboutme" id="aboutme">
+      <!-- Header text -->
+      <div class="headings">
+        <h2 class="headings--dark">
+          About Me
+        </h2>
+      </div>
+      
+      <!-- Image and texts -->
+      <div class="aboutme">
+        <img src="images/Junior_Tantono.jpg" class="aboutme_myphoto">
+        <h3 class="aboutme_header">
+          Hi! My name is Junior
+        </h3>
+        <p class="aboutme_text">
+          I am a computer science (big data) graduate that also has a business management background. 
+          I am data-driven and believe that data is essential in the decision-making process. 
+          I am aspiring to get into the fintech industry to utilise both my background and interest in investments.
+        </p>
+      </div>
+
+      <!-- Buttons for social links -->
+      <div class="social_links">
+        <a href="https://github.com/jrt-cmx" target="_blank" class="button-text"><i class="fab fa-github"></i>
+          Github</a>
+        <a href="https://www.linkedin.com/in/junior-tantono/" target="_blank" class="button-text"><i
+            class="fab fa-linkedin"></i>
+          LinkedIn</a>
+        <a href="mailto:juniortantono.jrtcmx@gmail.com" target="_blank" class="button-text"><i class="fa fa-envelope"></i>
+          Email</a>
+      </div>
+    </section>
+
+    <section class="section-skills" id="skills">
+      <!-- Header text -->
+      <div class="headings">
+        <h2 class="headings--dark">
+          Skills
+        </h2>
+      </div>
+
+    </section>
+
+  </main>
        
-    </body>
+  </body>
 </html>

@@ -20,50 +20,121 @@ body
 {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    font-size: 1.6rem;
+    font-size: 62.5%;
     line-height: 1.7;
     color: #777; 
 }
 
-.heading-primary 
+.header {
+    height: 90vh;
+    background-color: #1b2527;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    }
+    .header_container 
+    {
+        width: 80%;
+        margin: auto;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center; 
+        color: #e3d7c4;
+        text-transform: uppercase;
+        backface-visibility: hidden;
+        margin-bottom: 6rem; 
+    }
+        .header_container--name
+        {
+            display: block;
+            font-size: 6rem;
+            font-weight: 400;
+            letter-spacing: 3.5rem;
+            margin-bottom: 3rem;       
+        }
+        .header_container--cvprompt 
+        {
+            display: block;
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: 1.75rem;
+            margin-bottom: 3rem;
+        }
+
+.button
 {
-    color: #e3d7c4;
-    text-transform: uppercase;
-    backface-visibility: hidden;
-    margin-bottom: 6rem; 
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 10rem;
+    position: relative;
+    font-size: 1.6rem; 
 }
-    .heading-primary--main 
+    .button--white 
     {
-      display: block;
-      font-size: 6rem;
-      font-weight: 400;
-      letter-spacing: 3.5rem;
-      animation-name: moveInLeft;
-      animation-duration: 1s;
-      animation-timing-function: ease-out; 
+        background-color: #fff;
+        color: #777;
+        text-align: center; 
     }
-      @media only screen and (max-width: 37.5em) 
-      {
-        .heading-primary--main 
-        {
-          letter-spacing: 1rem;
-          font-family: 5rem; 
-        } 
-        }
-    .heading-primary--sub 
+
+.button-text:link, .button-text:visited 
+{
+    font-size: 1.6rem;
+    color: #000;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 0.1rem solid #000;
+    padding: 1rem;
+    transition: all .2s; 
+}
+    
+.headings
+{
+    text-align: center;
+    margin-bottom: 8rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem; 
+    font-size: 3.5rem;
+    font-weight: 700;
+    transition: all .2s; 
+}
+    .headings--dark {color:#1b2527;}
+    .headings--light {color:#e3d7c4;}
+
+.aboutme
+{
+    margin-left: 50rem;
+    font-size: 1.6rem;
+    width: calc((100% - 8rem) / 2);
+}
+
+    .aboutme_myphoto
     {
-      display: inline-block;
-      font-size: 1.5rem;
-      font-weight: 700;
-      letter-spacing: 1.75rem;
-      animation-name: moveInRight;
-      animation-duration: 1s;
-      animation-timing-function: ease-out; 
+        float: left;
+        margin-right: 10%;
+        width: 20%;
+        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+        border-radius: .2rem;
+        transition: all .2s;
+        outline-offset: 2rem;
     }
-      @media only screen and (max-width: 37.5em) 
-      {
-        .heading-primary--sub 
-        {
-          letter-spacing: .3rem; 
-        } 
-        }
+    .aboutme_header 
+    {
+        font-weight: 0;
+    }
+    .aboutme_text
+    {
+        justify-content: center;
+        font-size: 1.6rem; 
+    }
+
+.section-aboutme
+{
+    height: 70vh;
+}
+    
+    
+
+   
