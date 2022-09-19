@@ -106,8 +106,7 @@ body
 
 .section-aboutme
 {
-    height: 70vh;
-    
+    height: 70vh;    
 }
         .aboutme
     {
@@ -115,14 +114,13 @@ body
         font-size: 1.6rem;
         width: 80rem;
     }
-    @media only screen and (max-width: 68.25em) 
+    @media only screen and (max-width: 37.5em) 
     {
         .aboutme 
         {
-            /* max-width: 50rem; */
-            max-width: 69rem;
+            max-width: 38rem;
             padding: 0 3rem; 
-            margin-left: 20rem;
+            margin-left: 10rem;
         } 
     }
 
