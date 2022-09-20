@@ -141,23 +141,23 @@ body
     background-position: top;
     position: relative;
 }
-    .skill_container
+.skill_container
+{
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 50%;
+    margin-left: 25%;
+    font-size: 1.5rem;
+    padding: 2.5rem;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+}
+    .skill_container ul 
     {
-        background-color: rgba(255, 255, 255, 0.8);
-        width: 50%;
-        margin-left: 25%;
-        font-size: 1.5rem;
-        padding: 2.5rem;
-        text-align: center;
-        border-radius: 3px;
-        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+        list-style: none;
+        width: 100%;
+        margin: 0 auto; 
     }
-        .skill_container ul 
-        {
-            list-style: none;
-            width: 100%;
-            margin: 0 auto; 
-        }
 .section-experience
 {
     height: 110vh;
