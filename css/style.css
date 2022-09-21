@@ -136,7 +136,7 @@ body
 {
     .section-aboutme
     {
-        height: 50vh;    
+        height: 25vh;    
     }
         .aboutme
         {
@@ -187,7 +187,7 @@ body
 {
     .section-skills
     {
-        height: 35vh;
+        height: 25vh;
         background-color: #1b2527;
         background-position: top;
         position: relative;
@@ -209,6 +209,8 @@ body
             list-style: none; 
         }
 }
+
+/* EXPERIENCE */
 .section-experience
 {
     height: 100vh;
@@ -226,6 +228,17 @@ body
     }
     .experience_duration {text-align: right;}
 
+@media only screen and (max-width:1000px)
+{
+    .section-experience {height: 50vh;}
+    .experience_container
+    {
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+
+/* EDUCATION */
 .section-education
 {
     height: 220vh;
@@ -246,7 +259,17 @@ body
             font-size: 2.5rem;
         }
         .education_duration {text-align: right;}
+@media only screen and (max-width:1000px)
+{
+    .section-education {height: 100vh;}
+    .education_container
+    {
+        width: 80%;
+        margin-left: 10%;
+    }
+}
 
+/* PROJECT */
 .section-project
 {
     height: 200vh;
