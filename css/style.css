@@ -20,14 +20,14 @@ body
 {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    font-size: 62.5%;
+    font-size: 1.6rem;
     line-height: 1.7;
     color: #777; 
 }
 
 .header {
     height: 90vh;
-    background-color: #07d0f8;
+    background-color: #2e3f42;
     background-size: cover;
     background-position: top;
     position: relative;
@@ -54,7 +54,7 @@ body
             letter-spacing: 3.5rem;
             margin-bottom: 3rem;       
         }
-        .header_container--cvprompt 
+        .header_container--cvprompt
         {
             display: block;
             font-size: 1.5rem;
@@ -62,6 +62,14 @@ body
             letter-spacing: 1.75rem;
             margin-bottom: 3rem;
         }
+    @media only screen and (max-width: 37.5em) 
+    {
+        .header_container--name {
+            letter-spacing: 1rem;
+            font-family: 5rem; }
+        .header_container--cvprompt  {
+        letter-spacing: .3rem; } 
+    }
 
 .button
 {
@@ -102,9 +110,13 @@ body
 }
     .headings--dark {color:#1b2527;}
     .headings--light {color:#e3d7c4;}
+@media only screen and (max-width: 37.5em) 
+{
+    .headings {font-size: 2.5rem; margin-bottom: 3rem;} 
+    
+}
 
-
-
+/* ABOUT ME */
 .section-aboutme
 {
     height: 50vh;    
@@ -120,7 +132,8 @@ body
         {
             float: left;
             margin-right: 10%;
-            width: 20%;
+            margin-bottom: 10%;
+            width: 30%;
             box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
             border-radius: .2rem;
             transition: all .2s;
@@ -136,29 +149,36 @@ body
 {
     .section-aboutme
     {
-        height: 25vh;    
+        height: 80vh;    
     }
         .aboutme
         {
             margin-left:auto;
             font-size: 1.6rem;
-            width: 80rem;
+            width: 40rem;
         }
             .aboutme_myphoto
             {
-                float: left;
-                margin-right: 3%;
-                width: 30%;
+                float: center;
+                margin-right: 30%;
+                margin-left : 15%;
+                width: 70%;
                 box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
                 border-radius: .2rem;
                 transition: all .2s;
                 outline-offset: 2rem;
             }
+            .aboutme_header{margin-left : 10%;}
             .aboutme_text
             {
-                justify-content: center;
-                font-size: 1.6rem; 
+                position:relative;
+                margin-left : 10%;
+                justify-content: left;
+                font-size: 1.3rem; 
             }
+            .aboutme_text:not(:last-child) {
+                margin-bottom: 3rem; }
+            .social_links{margin-left:30%;}
 }
 .section-skills
 {
@@ -187,7 +207,7 @@ body
 {
     .section-skills
     {
-        height: 25vh;
+        height: 35vh;
         background-color: #1b2527;
         background-position: top;
         position: relative;
@@ -230,9 +250,10 @@ body
 
 @media only screen and (max-width:1000px)
 {
-    .section-experience {height: 50vh;}
+    .section-experience {height: 65vh;}
     .experience_container
-    {
+    {   
+        font-size: 1.0rem;
         width: 80%;
         margin-left: 10%;
     }
@@ -241,7 +262,7 @@ body
 /* EDUCATION */
 .section-education
 {
-    height: 220vh;
+    height: 235vh;
 }
     .education_container
     {
@@ -261,12 +282,17 @@ body
         .education_duration {text-align: right;}
 @media only screen and (max-width:1000px)
 {
-    .section-education {height: 100vh;}
+    .section-education {height: 130vh;}
     .education_container
     {
+        font-size: 1.0rem;
         width: 80%;
         margin-left: 10%;
     }
+        .education_heading
+        {
+            font-size: 1.5rem;
+        }
 }
 
 /* PROJECT */
@@ -274,4 +300,4 @@ body
 {
     height: 200vh;
 }
-    
+
