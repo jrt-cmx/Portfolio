@@ -1,20 +1,19 @@
-html {
-    font-size: 62.5%; }
-    @media only screen and (max-width: 75em) {
-      html {
-        font-size: 56.25%; } }
-    @media only screen and (max-width: 68.25em) {
-      html {
-        font-size: 55%; } }
-    @media only screen and (min-width: 112.5em) {
-      html {
-        font-size: 65%; } }
+html {font-size: 62.5%; }
+    @media only screen and (max-width: 75em) 
+    {
+      html {font-size: 56.25%;} 
+    }
+    @media only screen and (max-width: 68.25em) 
+    {
+      html {font-size: 55%; } 
+    }
+    @media only screen and (min-width: 112.5em) 
+    {
+      html {font-size: 65%; } 
+    }
   
-  body {
-    box-sizing: border-box;}
-    @media only screen and (max-width: 68.25em) {
-      body {
-        padding: 0; } }
+
+@media only screen and (max-width: 68.25em) {body {padding: 0;}}
   
 body 
 {
@@ -22,16 +21,18 @@ body
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 1.7;
-    color: #777; 
+    color: #777;
+    box-sizing: border-box; 
 }
 
-.header {
+.header 
+{
     height: 90vh;
     background-color: #2e3f42;
     background-size: cover;
     background-position: top;
     position: relative;
-    }
+}
     .header_container 
     {
         width: 80%;
@@ -423,6 +424,6 @@ body
         font-size: 3rem;
       }
 
-/* Project pictures */
-
+    /* Project pictures */
+    .card_picture--1 {background-image: url(../images/Portfolio.PNG);}
     .card_picture--2 {background-image: url(../images/DentalSEA.PNG);}
