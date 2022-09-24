@@ -112,9 +112,9 @@ body
     .headings--dark {color:#1b2527;}
     .headings--light {color:#e3d7c4;}
 
-    @media only screen and (max-width: 37.5em) 
+@media only screen and (max-width: 37.5em) 
 {
-    .headings {font-size: 2.5rem; margin-bottom: 3rem;} 
+    .headings {font-size: 2.5rem; margin-bottom: 0.5rem;} 
 }
 
 .smallheadings
@@ -138,7 +138,9 @@ body
 /* ABOUT ME */
 .section-aboutme
 {
-    height: 60vh;    
+    height: 60vh;   
+    display:inline-block;
+    width:100%;  
 }
     .aboutme
     {
@@ -166,10 +168,6 @@ body
 
 @media only screen and (max-width: 1000px) 
 {
-    .section-aboutme
-    {
-        height: 80vh;    
-    }
         .aboutme
         {
             margin-left:auto;
@@ -199,12 +197,14 @@ body
                 margin-bottom: 3rem; }
             .social_links{margin-left:10%;}
 }
+
 .section-skills
 {
-    height: 50vh;
+    display:inline-block; 
     background-color: #1b2527;
     background-position: top;
     position: relative;
+    width:100%;  
 }
 .skill_container
 {
@@ -224,10 +224,6 @@ body
 
 @media only screen and (max-width: 1000px) 
 {
-    .section-skills
-    {
-        height: 35vh;
-    }
     .skill_container
     {
         background-color: rgba(255, 255, 255, 0.8);
@@ -235,16 +231,15 @@ body
         margin-left: auto;
         margin-right:auto;
         font-size: 1.2rem;
-        padding: 1rem;
         text-align: left;
-      
     }
 }
 
 /* EXPERIENCE */
 .section-experience
 {
-    height: 100vh;
+    display:inline-block;
+    width:100%;  
 }
     .experience_container
     {
@@ -256,6 +251,7 @@ body
         padding: 2.5rem;
         border-radius: 3px;
         box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+        display:inline-block; 
     }
     .experience_duration {text-align: right;}
 
@@ -273,7 +269,8 @@ body
 /* EDUCATION */
 .section-education
 {
-    height: 235vh;
+    display:inline-block;
+    width:100%; 
 }
     .education_container
     {
@@ -309,7 +306,8 @@ body
 /* PROJECT */
 .section-project
 {
-    height: 200vh;
+    display:inline-block;
+    width:100%; 
 }
 
 .project-cards
@@ -427,3 +425,6 @@ body
     /* Project pictures */
     .card_picture--1 {background-image: url(../images/Portfolio.PNG);}
     .card_picture--2 {background-image: url(../images/DentalSEA.PNG);}
+
+
+.marginbottom{margin-bottom:3rem;}
