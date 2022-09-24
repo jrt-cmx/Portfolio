@@ -137,8 +137,7 @@ body
 
 /* ABOUT ME */
 .section-aboutme
-{
-    height: 60vh;   
+{  
     display:inline-block;
     width:100%;  
 }
@@ -257,7 +256,6 @@ body
 
 @media only screen and (max-width:1000px)
 {
-    .section-experience {height: 65vh;}
     .experience_container
     {   
         font-size: 1.0rem;
@@ -290,7 +288,6 @@ body
         .education_duration {text-align: right;}
 @media only screen and (max-width:1000px)
 {
-    .section-education {height: 130vh;}
     .education_container
     {
         font-size: 1.0rem;
@@ -310,27 +307,7 @@ body
     width:100%; 
 }
 
-.project-cards
-{
-    flex: 0 0 auto;
-    margin-bottom: 3rem !important;
-}
 
-@media only screen and  (min-width: 992px)
-{
-    .project-cards
-    {
-        width: 33.33333333%;
-    }
-}
-
-@media only screen and  (min-width: 768px)
-{
-    .project-cards
-    {
-        width: 50%;
-    }
-}
 
 /* PROJECT CARDS */
 .card 
