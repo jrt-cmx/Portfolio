@@ -80,14 +80,25 @@ body
     border-radius: 10rem;
     position: relative;
     font-size: 1.6rem; 
+    text-align: center; 
 }
     .button--white 
     {
         background-color: #fff;
         color: #777;
-        text-align: center; 
     }
-
+    .button--dark
+    {
+        background-color: #2e3f42;
+        color: rgb(255, 254, 254);
+    }
+    .button--dark--small
+    {
+        background-color: #2e3f42;
+        color: rgb(255, 254, 254);
+        padding: 1rem 1rem;
+        font-size: 1.0rem; 
+    }
 .button-text:link, .button-text:visited 
 {
     font-size: 1.6rem;
@@ -200,7 +211,7 @@ body
 .section-skills
 {
     display:inline-block; 
-    background-color: #1b2527;
+    background-color: #2e3f42;
     background-position: top;
     position: relative;
     width:100%;  
@@ -399,9 +410,24 @@ body
         font-size: 3rem;
       }
 
+.tools 
+{
+    text-transform: uppercase;
+    box-shadow: 0 2px 4px rgb(55 71 79 / 20%);
+    background: hsla(0,0%,98%,.9);
+    border-radius: 20px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+    margin: 5px;
+    min-width: 36px;
+    padding: 4px 8px;
+    text-align: center;
+}         
+
     /* Project pictures */
     .card_picture--1 {background-image: url(../images/Portfolio.PNG);}
     .card_picture--2 {background-image: url(../images/DentalSEA.PNG);}
+    .card_picture--3 {background-image: url(../images/tFanClub.PNG);}
 
 
 .marginbottom{margin-bottom:3rem;}
