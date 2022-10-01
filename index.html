@@ -10,6 +10,28 @@
   </head>
   <body ontouchstart id="home">
     
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+  
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
+  
+      <div class="navigation__background">&nbsp;</div>
+  
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item"><a href="#home" class="navigation__link">Home</a></li>
+          <li class="navigation__item"><a href="#aboutme" class="navigation__link">About me</a></li>
+          <li class="navigation__item"><a href="#skills" class="navigation__link">Skills</a></li>
+          <li class="navigation__item"><a href="#exp" class="navigation__link">Experience &
+              Education</a></li>
+          <li class="navigation__item"><a href="#project" class="navigation__link">Projects</a></li>
+        </ul>
+      </nav>
+    </div>
+    
+
     <header class="header">
       <span> Do note that this site is still Work In Progress (Started on: 19/9/22) Please view it from desktop as it is not mobile optimized yet.</span>
       <div class="header_container">
@@ -196,7 +218,6 @@
             Projects
           </h2>
         </div>
-        <div></div>
         
         <!-- PORTFOLIO -->
         <div class="card">
@@ -217,7 +238,7 @@
                 </ul>
               </h4>
             </div>
-            </div>
+          </div>
           <div class="card_side card_side--back">
             <div class="card_cta">
                 <h2 class="headings headings--dark">Portfolio</h2>
@@ -254,7 +275,7 @@
                 </ul>
               </h4>
             </div>
-            </div>
+          </div>
           <div class="card_side card_side--back">
             <div class="card_cta">
                 <h2 class="smallheadings smallheadings--dark">DentalSEA</h2>
@@ -276,51 +297,61 @@
             </div>
           </div>
         </div>
-      </div>
       
-      <!-- tFanClub -->
-      <div class="card">
-        <div class="card_side card_side--front">
-          <div class="card_picture card_picture--3">
-            &nbsp;
-          </div>
-          <h4 class="card_date">
-            <span class="card_date-span">8th October 2021 - 12th Nov 2021 </span>
-          </h4>
-          <div class="detail-card">
-            <h4 class="card_details">
-              <ul>
-                <li><span class="project-title">CSIT314 - tFanClub </span></li>
-                <li>
-                <span class="tools">Java</span>
-                <span class="tools">SQL</span>
-                <span class="tools">Git/Github</span>
-              </ul>
+        <!-- tFanClub -->
+        <div class="card">
+          <div class="card_side card_side--front">
+            <div class="card_picture card_picture--3">
+              &nbsp;
+            </div>
+            <h4 class="card_date">
+              <span class="card_date-span">8th October 2021 - 12th Nov 2021 </span>
             </h4>
+            <div class="detail-card">
+              <h4 class="card_details">
+                <ul>
+                  <li><span class="project-title">CSIT314 - tFanClub </span></li>
+                  <li>
+                  <span class="tools">Java</span>
+                  <span class="tools">SQL</span>
+                  <span class="tools">Git/Github</span>
+                </ul>
+              </h4>
+            </div>
           </div>
-          </div>
-        <div class="card_side card_side--back">
-          <div class="card_cta">
-              <h2 class="smallheadings smallheadings--dark">tFanClub</h2>
-                <p>
-                  I was the development lead of the group and overviewing both the development and documentationt team
+          <div class="card_side card_side--back">
+            <div class="card_cta">
+                <h2 class="smallheadings smallheadings--dark">tFanClub</h2>
+                  <p>
+                    I was the development lead of the group and overviewing both the development and documentationt team
+                    <br>
+                    • Implemented all the functions related to the patient user
+                    <br>
+                    • Designed the database schema, implemented the database and update it according to the development
+                    <br>
+                    • Test plan and test cases
+                  </p>
                   <br>
-                  • Implemented all the functions related to the patient user
-                  <br>
-                  • Designed the database schema, implemented the database and update it according to the development
-                  <br>
-                  • Test plan and test cases
-                </p>
-                <br>
-                <a href="https://github.com/jrt-cmx/CSIT314-Software-Development-Methodologies" target="_blank" class="button button--dark">GitHub Link</a>
-                <a href="https://drive.google.com/drive/folders/14dUsQ2XbCIumWx0a1ucoCjM5jBULFC0G?usp=sharing" target="_blank" 
-                class="button button--dark">Documentation Link</a>
+                  <a href="https://github.com/jrt-cmx/CSIT314-Software-Development-Methodologies" target="_blank" class="button button--dark">GitHub Link</a>
+                  <a href="https://drive.google.com/drive/folders/14dUsQ2XbCIumWx0a1ucoCjM5jBULFC0G?usp=sharing" target="_blank" 
+                  class="button button--dark">Documentation Link</a>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
       </section>
 
-    </main>    
+    </main>
+    <script src="./js/navigation.js"></script>
+    <script>
+      $(window).scroll(function() {    
+      var scroll = $(window).scrollTop();
+  
+      if (scroll >= 500) {
+          $(".nav").addClass("nav-bg");
+      } else {
+          $(".nav").removeClass("nav-bg");
+      }
+      });
+    </script>
   </body>
 </html>
