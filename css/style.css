@@ -452,96 +452,123 @@ body
 }
 
 
-
+@media only screen and (max-width:1000px)
+{
+  .card
+  {
+    width:90%;
+    margin-left: 5%;
+    margin-right:5%;
+    margin-bottom: 10%;
+  }
+}
 /* PROJECT CARDS */
 .card 
 {
-    background: #f5f5f5;
-    position: relative;
-    height: 50rem;
-    width: 50%;
-    margin-left: 25%;
-    margin-right:5%;
-    margin-bottom: 10%;
+  background: #f5f5f5;
+  position: relative;
+  height: 50rem;
+  width: 50%;
+  margin-left: 25%;
+  margin-right:5%;
+  margin-bottom: 10%;
 
 }
-    .card_side {
-      height: 50rem;
-      transition: all .8s ease;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      -webkit-backface-visibility: hidden;
-      backface-visibility: hidden;
-      border-radius: 10px;
-      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-      overflow: hidden; }
-      .card_side--back {
-        -webkit-transform: rotateY(180deg);
-        transform: rotateY(180deg); }
-    .card:hover .card_side--front {
-      -webkit-transform: rotateY(-180deg);
-      transform: rotateY(-180deg); }
-    .card:hover .card_side--back {
-      -webkit-transform: rotateY(0);
-      transform: rotateY(0); }
-    .card_picture {
-      background-size: cover;
-      background-position: center;
-      height: 35rem;
-      background-blend-mode: screen;
+  .card_side 
+  {
+    height: 50rem;
+    transition: all .8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    overflow: hidden; 
+  }
+    .card_side--back 
+    {
+      -webkit-transform: rotateY(180deg);
+      transform: rotateY(180deg); 
     }
-    .card_date {
-        background: #000;
-        font-size: 1.2rem;
-        font-weight: 300;
-        text-align: center;
-        color: #fff;
-        position: absolute;
-        top: 46rem;
-        /* bottom: 5rem; */
-        right: 0rem;
-        width: 35%; }
-      .card_date-span {
-        padding: 1rem 1.5rem;
-        -webkit-box-decoration-break: clone;
-        box-decoration-break: clone;
+    .card:hover .card_side--front 
+    {
+      -webkit-transform: rotateY(-180deg);
+      transform: rotateY(-180deg); 
+    }
+    .card:hover .card_side--back 
+    {
+      -webkit-transform: rotateY(0);
+      transform: rotateY(0);
+    }
+  .card_picture 
+  {
+    background-size: cover;
+    background-position: center;
+    height: 35rem;
+    background-blend-mode: screen;
+  }
+  .card_date 
+  {
+    background: #000;
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 46rem;
+    right: 0rem;
+    width: 35%; 
+  }
+    .card_date-span 
+    {
+      padding: 1rem 1.5rem;
+      -webkit-box-decoration-break: clone;
+      box-decoration-break: clone;
+    }
+    .card_heading-span 
+    {
+      padding: 1rem 1.5rem;
+      -webkit-box-decoration-break: clone;
+      box-decoration-break: clone;
+      background: #2e3830;
+    }
+    .detail-card 
+    {
+      height: 100%;
+      background: #f5f5f5;
+    }
+    .card_details ul 
+    {
+      list-style: none;
+      width: 100%;
+      margin: 0 auto;
+      padding-left: 1.5rem;
+    }
+      .card_details ul li 
+      {
+        margin: .5rem;
+        font-size: 1.5rem;
       }
-      .card_heading-span {
-        padding: 1rem 1.5rem;
-        -webkit-box-decoration-break: clone;
-        box-decoration-break: clone;
-        background: #2e3830;
-      }
-      .detail-card {
-        height: 100%;
-        background: #f5f5f5;
-      }
-      .card_details ul {
-        list-style: none;
-        width: 100%;
-        margin: 0 auto;
-        padding-left: 1.5rem;
-      }
-        .card_details ul li {
-          margin: .5rem;
-          font-size: 1.5rem;
-        }
-      .card_cta {
-        width: 70%;
-        height: 80%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); }
-      .project-title {
-        color: #455a64;
-        letter-spacing: 2px;
-        font-family: "Roboto", monospace;
-        font-weight: 700;
-        font-size: 3rem;
-      }
+    .card_cta 
+    {
+      width: 70%;
+      height: 80%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); 
+    }
+.project-title 
+{
+  color: #455a64;
+  letter-spacing: 2px;
+  font-family: "Roboto", monospace;
+  font-weight: 700;
+  font-size: 3rem;
+}
 
 .tools 
 {
@@ -558,7 +585,7 @@ body
 }         
 
     /* Project pictures */
-    .card_picture--1 {background-image: url(../images/Portfolio.PNG);}
+    .card_picture--1 {background-image: url(../images/portfolio.PNG);}
     .card_picture--2 {background-image: url(../images/DentalSEA.PNG);}
     .card_picture--3 {background-image: url(../images/tFanClub.PNG);}
 
