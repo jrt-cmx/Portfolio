@@ -232,6 +232,13 @@ body
         padding: 1rem 1rem;
         font-size: 1.0rem; 
     }
+    @media only screen and (max-width: 37.5em) 
+    {
+      .button--dark
+      {
+        font-size: 1.0rem; 
+      }
+    }
 .button-text:link, .button-text:visited 
 {
     font-size: 1.6rem;
@@ -271,10 +278,10 @@ body
     font-weight: 700;
     transition: all .2s; 
 }
-    .smallheadings--dark {color:#1b2527;}
-    .smallheadings--light {color:#e3d7c4;}
+  .smallheadings--dark {color:#1b2527;}
+  .smallheadings--light {color:#e3d7c4;}
 
-    @media only screen and (max-width: 37.5em) 
+@media only screen and (max-width: 37.5em) 
 {
     .smallheadings {font-size: 2.5rem; margin-bottom: 1rem;} 
 }
@@ -309,7 +316,7 @@ body
             font-size: 1.6rem; 
         }
 
-@media only screen and (max-width: 1000px) 
+@media only screen and (max-width: 37.5em) 
 {
         .aboutme
         {
@@ -402,9 +409,9 @@ body
 {
     .experience_container
     {   
-        font-size: 1.0rem;
+        font-size: 1.2rem;
         width: 80%;
-        margin-left: 10%;
+        margin-left: 7.5%;
     }
 }
 
@@ -434,9 +441,9 @@ body
 {
     .education_container
     {
-        font-size: 1.0rem;
+        font-size: 1.2rem;
         width: 80%;
-        margin-left: 10%;
+        margin-left: 7.5%;
     }
         .education_heading
         {
@@ -451,17 +458,6 @@ body
     width:100%; 
 }
 
-
-@media only screen and (max-width:1000px)
-{
-  .card
-  {
-    width:90%;
-    margin-left: 5%;
-    margin-right:5%;
-    margin-bottom: 10%;
-  }
-}
 /* PROJECT CARDS */
 .card 
 {
@@ -505,7 +501,8 @@ body
     }
   .card_picture 
   {
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
     height: 35rem;
     background-blend-mode: screen;
@@ -584,6 +581,35 @@ body
     text-align: center;
 }         
 
+@media only screen and (max-width:1000px)
+{
+  .card
+  {
+    width:70%;
+    margin-left: 15%;
+    margin-right:5%;
+  }
+}
+
+@media only screen and (max-width:700px)
+{
+  .card
+  {
+    width:90%;
+    margin-left: 5%;
+    margin-right:5%;
+  }
+  .card_cta 
+  {
+    width: 70%;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    font-size:1.3rem;
+  }
+}
     /* Project pictures */
     .card_picture--1 {background-image: url(../images/portfolio.PNG);}
     .card_picture--2 {background-image: url(../images/DentalSEA.PNG);}
